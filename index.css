@@ -19,6 +19,20 @@ body {
   animation-delay: 0s;
 }
 
+.title{
+  position: absolute;
+  overflow: hidden;
+  letter-spacing: 1px;
+  width: 30%;
+  justify-content: center;
+  transform: translate(550px, -50px);
+}
+
+.title img{
+  height: auto;
+  width: 100%;
+}
+
 .background-container {
   position: fixed;
   top: 250px;
@@ -30,7 +44,7 @@ body {
 }
 
 #background {
-  opacity: 50%;
+  opacity: 70%;
   position: absolute;
   top: 0;
   left: 0;
@@ -91,23 +105,17 @@ body {
 
 #tree {
   display: block;
-  height: 100%; /* Fill the container's height */
-  width: auto;
-  position: relative;
-  z-index: 3;  /* Width adjusts automatically */
-  /* transform: translate(0px, 500px); /* REMOVE THIS LINE */
-}
-#tree2 {
-  display: block;
-  /* Prevent extra space below SVG */
-  /* Let the SVG scale while maintaining aspect ratio */
   height: 100%;
-  /* Fill the container's height */
   width: auto;
   position: relative;
   z-index: 3;
-  /* Width adjusts automatically */
-  /* transform: translate(0px, 500px); /* REMOVE THIS LINE */
+}
+#tree2 {
+  display: block;
+  height: 100%;
+  width: auto;
+  position: relative;
+  z-index: 3;
 }
 
 .popup {
@@ -202,6 +210,6 @@ body {
   
   .popup-content {
     margin-right: 20px;
-    /* Keep existing styles, add margin-right */
+
   }
 
