@@ -8,34 +8,38 @@
 </head>
 <body>
 
-    
-
-    <div class="tree-container">
-        <svg id="tree" width="177" height="264" viewBox="0 0 59 88" fill="none" xmlns="http://www.w3.org/2000/svg">
-            {/* --- The content of the SVG remains the same --- */}
-            <rect x="22.0151" y="38.319" width="14.4855" height="48.8607" rx="7.24277" fill="#A98467" />
-            <rect x="22.0537" y="20.2538" width="14.4855" height="48.8607" rx="7.24277" fill="#936845" />
-            <rect x="0.0333176" width="58.9667" height="58.9667" rx="29.4833" fill="#ADC178" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M0.215479 26.2944C0.0732194 27.4687 0 28.6643 0 29.8771C0 46.1603 13.2001 59.3604 29.4833 59.3604C45.7665 59.3604 58.9667 46.1603 58.9667 29.8771C58.9667 28.6643 58.8935 27.4687 58.7512 26.2944C56.9833 40.8879 44.5538 52.195 29.4833 52.195C14.4129 52.195 1.98332 40.8879 0.215479 26.2944Z"
-                fill="#8FB26E" />
-        </svg>
-    </div>  
-    
-    <div class="ground-container">
-        <svg id="left-ground" width="515" height="201" viewBox="0 0 515 201" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="733.5" cy="382" rx="733.5" ry="382" fill="#58AC59"/>
-        </svg>
-        <!--
-        <svg id="right-ground" width="515" height="201" viewBox="0 0 515 201" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="733.5" cy="382" rx="733.5" ry="382" fill="#58AC59"/>
-        </svg>
-    -->
-        <svg id="middle-ground" width="100%" height="248" viewBox="0 0 1920 248" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="960" cy="382" rx="1141.5" ry="382" fill="#9BDB7B"/>
-        </svg>
-
+    <div class="background-container">
+        <img src="rainforest background.svg" alt="Background pattern" id="background">
     </div>
+
+    
+    <div class="scene">
+        <div class="tree-container">
+            <svg id="tree" width="177" height="264" viewBox="0 0 59 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                {/* --- The content of the SVG remains the same --- */}
+                <rect x="22.0151" y="38.319" width="14.4855" height="48.8607" rx="7.24277" fill="#A98467" />
+                <rect x="22.0537" y="20.2538" width="14.4855" height="48.8607" rx="7.24277" fill="#936845" />
+                <rect x="0.0333176" width="58.9667" height="58.9667" rx="29.4833" fill="#ADC178" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.215479 26.2944C0.0732194 27.4687 0 28.6643 0 29.8771C0 46.1603 13.2001 59.3604 29.4833 59.3604C45.7665 59.3604 58.9667 46.1603 58.9667 29.8771C58.9667 28.6643 58.8935 27.4687 58.7512 26.2944C56.9833 40.8879 44.5538 52.195 29.4833 52.195C14.4129 52.195 1.98332 40.8879 0.215479 26.2944Z"
+                    fill="#8FB26E" />
+            </svg>
+        </div>  
+        
+        <div class="ground-container">
+            <svg id="left-ground" width="515" height="201" viewBox="0 0 515 201" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="733.5" cy="382" rx="700" ry="400" fill="#58AC59"/>
+            </svg>
+            <svg id="right-ground" width="515" height="201" viewBox="0 0 515 201" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="733.5" cy="382" rx="700" ry="400" fill="#58AC59"/>
+            </svg>
+            <svg id="middle-ground" width="100%" height="248" viewBox="0 0 1920 248" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="960" cy="382" rx="1141.5" ry="382" fill="#9BDB7B"/>
+            </svg>
+    
+        </div>
+    </div>
+    
     
     <div id="checklist-popup" class="popup">
         <div class="popup-content">
@@ -75,5 +79,6 @@
             </div>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
