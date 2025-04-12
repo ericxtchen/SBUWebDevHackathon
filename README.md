@@ -50,3 +50,9 @@ Woodcode is an interactive web application that gamifies the LeetCode problem-so
 1. Clone the repository
 2. Open `index.html` in your web browser
 3. Start solving problems and watch your tree grow!
+
+## Contributors: 
+Eric Chen\
+Ryan Xing\
+Owen Oo\
+Raymond Zhang
