@@ -1,13 +1,14 @@
-const treeContainer = document.querySelector(".tree-container");
+// Update index.js
+const treeContainer = document.querySelector('.tree-container');
 const popup = document.getElementById("checklist-popup");
 
 treeContainer.addEventListener("click", () => {
-  popup.style.display = "flex";
+    popup.classList.add("active");
 });
 
-// Close popup when clicking outside the content
+// Close popup when clicking outside
 popup.addEventListener("click", (event) => {
-  if (event.target === popup) {
-    popup.style.display = "none";
-  }
+    if (event.target === popup) {
+        popup.classList.remove("active");
+    }
 });

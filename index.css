@@ -18,6 +18,7 @@ body {
   overflow: hidden;
 }
 
+
 #background {
   opacity: 50%;
   position: absolute;
@@ -27,7 +28,6 @@ body {
   height: 100%;
   pointer-events: none; /* Allows clicks to pass through */
 }
-
 
 .ground-container {
   position: fixed;
