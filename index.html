@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Woodcode</title>
+</head>
+<body>
+
+    
+
+    <div class="tree-container">
+        <svg id="tree" width="177" height="264" viewBox="0 0 59 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+            {/* --- The content of the SVG remains the same --- */}
+            <rect x="22.0151" y="38.319" width="14.4855" height="48.8607" rx="7.24277" fill="#A98467" />
+            <rect x="22.0537" y="20.2538" width="14.4855" height="48.8607" rx="7.24277" fill="#936845" />
+            <rect x="0.0333176" width="58.9667" height="58.9667" rx="29.4833" fill="#ADC178" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.215479 26.2944C0.0732194 27.4687 0 28.6643 0 29.8771C0 46.1603 13.2001 59.3604 29.4833 59.3604C45.7665 59.3604 58.9667 46.1603 58.9667 29.8771C58.9667 28.6643 58.8935 27.4687 58.7512 26.2944C56.9833 40.8879 44.5538 52.195 29.4833 52.195C14.4129 52.195 1.98332 40.8879 0.215479 26.2944Z"
+                fill="#8FB26E" />
+        </svg>
+    </div>  
+    
+    <div class="ground-container">
+        <svg id="left-ground" width="515" height="201" viewBox="0 0 515 201" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="733.5" cy="382" rx="733.5" ry="382" fill="#58AC59"/>
+        </svg>
+        <!--
+        <svg id="right-ground" width="515" height="201" viewBox="0 0 515 201" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="733.5" cy="382" rx="733.5" ry="382" fill="#58AC59"/>
+        </svg>
+    -->
+        <svg id="middle-ground" width="100%" height="248" viewBox="0 0 1920 248" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="960" cy="382" rx="1141.5" ry="382" fill="#9BDB7B"/>
+        </svg>
+
+    </div>
+    
+    <div id="checklist-popup" class="popup">
+        <div class="popup-content">
+            <h2>ARRAYS</h2>
+            <div class="tree-section">
+                <h3>Tree A1:</h3>
+                <div class="checklist-item">
+                    <input type="checkbox" id="two-sum">
+                    <label for="two-sum"><a href="https://leetcode.com/problems/two-sum" target="_blank">Two Sum</a></label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="contains-duplicate">
+                    <label for="contains-duplicate"><a href="https://leetcode.com/problems/contains-duplicate" target="_blank">Contains Duplicate</a></label>
+                </div>
+            </div>
+            <div class="tree-section">
+                <h3>Tree A2:</h3>
+                <div class="checklist-item">
+                    <input type="checkbox" id="group-anagrams">
+                    <label for="group-anagrams"><a href="https://leetcode.com/problems/group-anagrams" target="_blank">Group Anagrams</a></label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="short-encoding">
+                    <label for="short-encoding"><a href="https://leetcode.com/problems/short-encoding-of-words" target="_blank">Short Encoding of Words</a></label>
+                </div>
+            </div>
+            <div class="tree-section">
+                <h3>Tree A3:</h3>
+                <div class="checklist-item">
+                    <input type="checkbox" id="valid-sudoku">
+                    <label for="valid-sudoku"><a href="https://leetcode.com/problems/valid-sudoku" target="_blank">Valid Sudoku</a></label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="longest-consecutive">
+                    <label for="longest-consecutive"><a href="https://leetcode.com/problems/longest-consecutive-sequence" target="_blank">Longest Consecutive Sequence</a></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

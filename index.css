@@ -1,0 +1,132 @@
+body {
+  background-color: #ecffeb;
+  overflow: hidden; /* Prevents scrollbars from fixed elements */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  /* No flex needed here if elements are fixed */
+}
+
+
+
+.ground-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15vh; /* Adjust ground height as needed (relative to viewport height) */
+  overflow: hidden; /* Clip the large ellipse SVG */
+  z-index: 1; /* Ensure ground is behind tree */
+}
+
+#middle-ground {
+  display: block; /* Prevent extra space below SVG */
+  width: 100%;
+  height: auto; /* Let aspect ratio determine height based on width/viewBox */
+  /*
+     'xMidYMax' aligns the bottom-middle of SVG viewBox with the bottom-middle of the container.
+     'slice' scales the SVG (preserving aspect ratio) to cover the container, potentially cropping parts.
+     This combination should show the top part of your large ellipse.
+  */
+}
+
+#left-ground{
+  display: block;
+  position: absolute;
+  width:100%;
+  height:auto;
+  z-index:2;
+}
+
+#right-ground{
+  display: block;
+  position: absolute;
+  width:100%;
+  height:auto;
+  z-index:2;
+}
+
+.tree-container {
+  position: fixed; /* Fix position relative to the viewport */
+  bottom: 15vh; /* Align bottom edge with the top of the ground container */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+
+  /* Define tree size relative to viewport */
+  height: 30vh; /* Adjust tree height as needed */
+  width: auto;  /* Width adjusts based on height and SVG aspect ratio */
+
+  /* Pull the tree down slightly to overlap the ground visually */
+  margin-bottom: -4vh; /* << ADJUST THIS VALUE to make the tree look planted */
+
+  z-index: 2; /* Ensure tree is above ground */
+  display: flex; /* Use flex to help center/align the SVG inside */
+  justify-content: center;
+  align-items: flex-end; /* Align bottom of SVG with bottom of container */
+}
+
+#tree {
+  display: block; /* Prevent extra space below SVG */
+  /* Let the SVG scale while maintaining aspect ratio */
+  height: 100%; /* Fill the container's height */
+  width: auto;  /* Width adjusts automatically */
+  /* transform: translate(0px, 500px); /* REMOVE THIS LINE */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.popup h2 {
+    color: #58AC59;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tree-section {
+    margin-bottom: 20px;
+}
+
+.tree-section h3 {
+    color: #936845;
+    margin-bottom: 10px;
+}
+
+.checklist-item {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.checklist-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.checklist-item a {
+    color: #58AC59;
+    text-decoration: none;
+}
+
+.checklist-item a:hover {
+    text-decoration: underline;
+}
