@@ -1,5 +1,5 @@
 # SBUWebDevHackathon
-Team Name: WoodCode
+Team Name: WoodCode \
 Eric Chen (eric.x.chen@stonybrook.edu) \
 Owen Oo (bonemyatpaing.oo@stonybrook.edu) \
 Ryan Xing (ryan.xing@stonybrook.edu) \
